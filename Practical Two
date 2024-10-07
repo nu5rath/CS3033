@@ -1,1 +1,7 @@
-
+try:
+    import google.colab
+    print("We are in Google colab, we need to clone the repo")
+    !git clone https://github.com/abdn-cs3033-ai/practicals.git
+    %cd practicals/week03
+except:
+    print("Not in colab")
